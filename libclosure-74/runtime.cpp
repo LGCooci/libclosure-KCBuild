@@ -189,6 +189,7 @@ Internal Support routines for copying
 
 // Copy, or bump refcount, of a block.  If really copying, call the copy helper if present.
 // KC重点提示: 这里是核心重点 block的拷贝操作: 栈Block -> 堆Block
+
 void *_Block_copy(const void *arg) {
     struct Block_layout *aBlock;
 
